@@ -204,19 +204,83 @@ body {
 
 .flex-50 {
     width: 50%;
-    height: 100%;
 }
 
-.flex-50:has(img) {
+.presentation .flex-50:has(img) {
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
+
+
+/* .flex-50:has(iframe) {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+} */
 
 .presentation img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.schlaget-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+}
+
+.schlaget {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.stream {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border: none;
+}
+
+.schlaget-text {
+    padding: 5%;
+    padding-bottom: 0;
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+.schlaget-text h3 {
+    font-family: var(--font-bold);
+    color: var(--text-color-light);
+    font-size: 2.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.schlaget-text p {
+    font-family: var(--font-text);
+    color: var(--text-color);
+    font-size: 1.6em;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.schlaget-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.schlaget-logo img {
+    width: 150px;
+    height: auto;
+}
+
 
 .evenemang-container {
     width: 100%;
@@ -254,19 +318,19 @@ body {
 
 
 
-.nolleP {
+.event-nolleP {
     background-image: url("media/events/nolleP.jpeg");
 }
-.schlaget {
+.event-schlaget {
     background-image: url("media/events/schlaget.jpg");
 }
-.krabollen {
+.event-krabollen {
     background-image: url("media/events/krabollen.jpeg");
 }
-.badtaste {
+.event-badtaste {
     background-image: url("media/events/badtaste.jpeg");
 }
-.semmelfrossan {
+.event-semmelfrossan {
     background-image: url("media/events/semmelfrossan.png");
 }
 .bg-parallax {
@@ -319,6 +383,54 @@ body {
     margin-bottom: auto;
 }
 
+.heaven-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+
+.heaven-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heaven {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 25px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.heaven h3 {
+    font-family: var(--font-bold);
+    color: var(--text-color-light);
+    font-size: 1.8em;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.patet-img {
+    width: 97%;
+    height: auto;
+    border-radius: 10px 10px 10px 10px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
+}
 
 footer {
     background-color: var(--primary-color);
@@ -382,5 +494,16 @@ footer img {
     .vilingimg {
         margin: auto;
         margin-bottom: 50px;
+    }
+
+    /* Heaven divs responsive styles */
+    .heaven {
+        width: 80%;
+        min-width: 300px;
+        max-width: 600px;
+    }
+
+    .patet-img {
+        width: 100%;
     }
 }
