@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #780e1b;
+    --dark-blue: #0b58a3;
+    --light-blue: #86c0e4;
+    --yellow: #f4ec44;
+    --secondary-color: #FFFFF4;
+    --text-color: #121212;
+    --text-color-light: #7a7a7a;
+
+    --font-family: 'Roboto Serif', 'sans-serif', 'Impact';
+    --font-bold: 'Impact';
+    --font-text: 'Roboto Serif, sans-serif';
+}
+
+.eggs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color-light);
+}
+
+.carton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.egg {
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.egg img {
+    width: 75%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    overflow: hidden;
+}
