@@ -7,13 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="hamburger">
+        <div class="hamburger-imgs">
+            <img src="media/4V_transparent_utankant.png" alt="4-Verkeriet Logo" class="hamburger-logo">
+            <img src="media/hamburger-icon.png" alt="Menu" class="hamburger-icon" onclick="document.querySelector('.hamburger-menu').classList.toggle('active')">
+        </div>
+        <div class="hamburger-menu">
+            <ul>
+                <li><a href="index.html">4-Verkeriet</a></li>
+                <li class="current"><a href="about.html">Om oss</a></li>
+                <li><a href="schlaget.html">Schlaget</a></li>
+                <li><a href="events.html">Evenemang</a></li>
+                <li><a href="patethimmel.html">Patethimmel</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="line"></div>
     <header>
         <img src="media/4V_transparent_utankant.png" alt="4-Verkeriet Logo" class="logo">
         <div class="navigator">
             <nav>
                 <ul>
                     <li><a href="index.html">4-Verkeriet</a></li>
-                    <li class="active"><a href="about.html">Om oss</a></li>
+                    <li class="current"><a href="about.html">Om oss</a></li>
                     <li><a href="schlaget.html">Schlaget</a></li>
                     <li><a href="events.html">Evenemang</a></li>
                     <li><a href="patethimmel.html">Patethimmel</a></li>

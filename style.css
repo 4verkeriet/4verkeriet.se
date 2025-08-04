@@ -34,6 +34,96 @@ body {
     padding: 20px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.hamburger-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 75px;
+    z-index: 10;
+}
+
+.hamburger-logo {
+    height: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+
+.hamburger-icon {
+    height: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.hamburger-menu ul {
+    list-style-type: circle;
+    padding: 10px 0px 5px 25px;
+    margin: 0;
+}
+
+.hamburger-menu li {
+    margin: 10px 0;
+}
+
+
+.hamburger-menu li.current {
+    list-style: disc;
+}
+
+.hamburger-menu a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.hamburger-menu a:hover {
+    color: var(--light-blue);
+    text-decoration: underline;
+}
+
+.hamburger-menu .current a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+}
+
+.line {
+    display: none;
+    width: 100%;
+    height: 10px;
+    background-color: var(--primary-color);
+}
+
+@media (max-width: 925px) {
+    .hamburger {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+
+    .line {
+        display: block;
+    }
+}
+
 .navigator {
     background-color: var(--primary-color);
     padding: 10px;
@@ -53,7 +143,7 @@ body {
     padding: 0;
 }
 
-.navigator .active a {
+.navigator .current a {
     color: var(--dark-blue);
     text-decoration: underline;
 }
@@ -89,20 +179,9 @@ body {
     max-height: 600px;
     object-fit: cover;
     object-position: center;
-    /* background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat; */
     background-size: cover;
     background-position-y: -80px;
 }
-
-/* @media (max-width: 925px) {
-    .title {
-        background-position: 0;
-        aspect-ratio: auto;
-    }
-    
-} */
 
 .title-text {
     position: absolute;
@@ -145,6 +224,11 @@ body {
 }
 
 @media (max-width: 925px) {
+
+    .title h1 {
+        font-size: 3em;
+        padding-top: 25%;
+    }
 
     .title .description {
         width: 90%;
