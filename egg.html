@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="eggs.css">
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <script src="modal.js"></script>
 </head>
 <body>
     <div class="hamburger">
@@ -40,31 +41,35 @@
         </div>
     </header>
     <div class="eggs">
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
         <h1>Ägg kyrkogården</h1>
         <div class="carton">
             <div class="egg">
-                <img src="media/eggs/egginor.jpg" alt="Egginor">
+                <img src="media/eggs/egginor.jpg" alt="Egginor" onclick="openModal(this.src)">
                 <h3>Egginor Eggman</h3>
                 <p>2025-03-21</p>
-                <p>2025-04-17</p>
+                <p>♰ 2025-04-17</p>
             </div>
             <div class="egg">
-                <img src="media/eggs/eggald.jpg" alt="Eggald">
+                <img src="media/eggs/eggald.jpg" alt="Eggald" onclick="openModal(this.src)">
                 <h3>Eggald Eggeld</h3>
                 <p>2025-03-24</p>
-                <p>2025-03-26</p>
+                <p>♰ 2025-03-26</p>
             </div>
             <div class="egg">
-                <img src="media/eggs/eggald2.jpg" alt="Eggald Jr.">
+                <img src="media/eggs/eggald2.jpg" alt="Eggald Jr." onclick="openModal(this.src)">
                 <h3>Eggald Eggeld Jr.</h3>
                 <p>2025-03-26</p>
-                <p>2025-04-17</p>
+                <p>♰ 2025-04-17</p>
             </div>
             <div class="egg">
-                <img src="media/eggs/paggu.png" alt="Päggu">
+                <img src="media/eggs/paggu.png" alt="Päggu" onclick="openModal(this.src)">
                 <h3>Päggu</h3>
                 <p>2025-03-30</p>
-                <p>2025-04-17</p>
+                <p>♰ 2025-04-17</p>
             </div>
 
         </div>

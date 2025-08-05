@@ -677,6 +677,10 @@ footer img {
     .imgright {
         flex-direction: column;
     }
+
+    .presentation {
+        max-width: 570px;
+    }
     
     .flex-50 {
         width: 100%;
