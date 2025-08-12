@@ -515,19 +515,19 @@ header {
 
 
 .event-nolleP {
-    background-image: url("media/events/nolleP.jpeg");
+    background-image: url("media/events/nolleP.webp");
 }
 .event-schlaget {
-    background-image: url("media/events/schlaget.jpg");
+    background-image: url("media/events/schlaget.webp");
 }
 .event-krabollen {
-    background-image: url("media/events/krabollen.jpeg");
+    background-image: url("media/events/krabollen.webp");
 }
 .event-badtaste {
-    background-image: url("media/events/badtaste.jpeg");
+    background-image: url("media/events/badtaste.webp");
 }
 .event-semmelfrossan {
-    background-image: url("media/events/semmelfrossan.png");
+    background-image: url("media/events/semmelfrossan.webp");
 }
 .bg-parallax {
     background-attachment: fixed;
