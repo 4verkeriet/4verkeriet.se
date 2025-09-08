@@ -26,13 +26,6 @@ body {
 }
 
 
-.logo {
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 20px;
-}
 
 .hamburger {
     display: none;
@@ -53,9 +46,15 @@ body {
 
 .hamburger-logo {
     height: 75%;
+    aspect-ratio: 1 / 1;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;
+}
+
+.hamburger-4v-logo {
+    width: 100%;
+    height: 100%;
 }
 
 .hamburger-icon {
@@ -110,6 +109,21 @@ body {
     background-color: var(--primary-color);
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.header-logo {
+    width: 120px;
+    height: 120px;
+}
+
 @media (max-width: 925px) {
     .hamburger {
         display: flex;
@@ -126,8 +140,10 @@ body {
 
 .navigator {
     background-color: var(--primary-color);
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .navigator nav {
@@ -500,19 +516,19 @@ body {
 
 
 .event-nolleP {
-    background-image: url("media/events/nolleP.jpeg");
+    background-image: url("media/events/nolleP.webp");
 }
 .event-schlaget {
-    background-image: url("media/events/schlaget.jpg");
+    background-image: url("media/events/schlaget.webp");
 }
 .event-krabollen {
-    background-image: url("media/events/krabollen.jpeg");
+    background-image: url("media/events/krabollen.webp");
 }
 .event-badtaste {
-    background-image: url("media/events/badtaste.jpeg");
+    background-image: url("media/events/badtaste.webp");
 }
 .event-semmelfrossan {
-    background-image: url("media/events/semmelfrossan.png");
+    background-image: url("media/events/semmelfrossan.webp");
 }
 .bg-parallax {
     background-attachment: fixed;
@@ -681,7 +697,7 @@ footer img {
     .presentation {
         max-width: 570px;
     }
-    
+
     .flex-50 {
         width: 100%;
     }
