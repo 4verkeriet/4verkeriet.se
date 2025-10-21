@@ -688,6 +688,26 @@ footer img {
     margin-left: 10px;
 }
 
+.hostedby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.hostedby p {
+    margin: 0;
+    font-family: var(--font-text);
+    font-size: 1em;
+    color: var(--secondary-color);
+}
+
+.hostedby img {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+}
+
 /* Mobile responsive styles */
 @media (max-width: 925px) {
     .imgleft {
